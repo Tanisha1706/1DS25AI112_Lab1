@@ -69,6 +69,50 @@ for (int i=0;i<10;i++)
     {
         printf("%d ",a[i]);
     }
-    }
+    //6. Deletion 
+    
+    printf("\n\nDeletion\n");
+    //     i. at given pos
+    
+            int val_del=99;
+            int pos_del=3;
+            
+        
+         printf("\nArray before deletion\n");      //Traversal
+                 for(int i=0;i<=last;i++)
+                {
+                    printf("%d, ",a[i]);        
+                }
+                
+        printf("\n\nDeletion of element at index pos = %d\n",pos_del); 
+        
+                for(int i=pos_del;i<=last;i++)
+                {
+                    a[i]=a[i+1];        //shifting to the left[or previous] element side
+                }
+            
+            last--;                     //since array size is decreased
+            
+            printf("\nArray after deletion\n");      //Traversal
+                 for(int i=0;i<=last;i++)
+                {
+                    printf("%d, ",a[i]);        
+                }
+    
+    
+    
+    
+    //     ii. at beginning
+            
+            // just put pos_del = 0
+            
+    //     iii. at end
+    
+           last--;    
+           printf("\n\nArray after deletion at last\n");      //Traversal
+                 for(int i=0;i<=last;i++)
+                {
+                    printf("%d, ",a[i]);        
+                }
+            }
  
-
